@@ -1,6 +1,6 @@
 import React from 'react'
 import DOM from 'react-dom'
-import Autocomplete from '../../lib/index'
+import Autocomplete from '../../lib/Autocomplete'
 import { getStates, matchStateToTerm, sortStates, styles, fakeRequest } from '../../lib/utils'
 
 let App = React.createClass({
@@ -57,3 +57,4 @@ let App = React.createClass({
 
 DOM.render(<App/>, document.getElementById('container'))
 
+if (module.hot) { module.hot.accept() }
